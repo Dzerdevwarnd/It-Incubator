@@ -1,12 +1,12 @@
 function getCount(str) {
 	let count = 0
-	for (let i = 0; i < str.length; i++) {
+	for (let L = 0; L < str.length; L++) {
 		if (
-			str(i) === a ||
-			str(i) === e ||
-			str(i) === i ||
-			str(i) === o ||
-			str(i) === u
+			str(L) === 'a' ||
+			str(L) === 'e' ||
+			str(L) === 'i' ||
+			str(L) === 'o' ||
+			str(L) === 'u'
 		) {
 			count += 1
 		}
