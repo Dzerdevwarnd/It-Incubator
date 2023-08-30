@@ -1,13 +1,17 @@
 function disemvowel(str) {
-	for (i = 0; i < str.length; i++)
+	str = str.toLowerCase()
+	let newStr = ''
+	for (let i = 0; i < str.length; i++)
 		if (
-			str[i] === 'a' ||
-			str[i] === 'e' ||
-			str[i] === 'i' ||
-			str[i] === 'o' ||
-			str[i] === 'u'
+			str[i] !== 'a' &&
+			str[i] !== 'e' &&
+			str[i] !== 'i' &&
+			str[i] !== 'o' &&
+			str[i] !== 'u'
 		) {
-			str[i] = str[i + 1]
+			newStr += str[i]
 		}
-	console.log(str)
+	console.log(newStr)
 }
+
+disemvowel('This website is for losers LOL!')
