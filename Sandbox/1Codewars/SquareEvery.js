@@ -5,5 +5,5 @@ function squareDigits(num) {
 		newStr += str[i] * str[i]
 	}
 	let newNum = Number(newStr)
-	return newStr
+	return newNum
 }
